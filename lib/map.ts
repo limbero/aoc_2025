@@ -1,4 +1,4 @@
-type MapNode = {
+export type MapNode = {
   content: string;
   x: number;
   y: number;
@@ -12,7 +12,7 @@ type MapNode = {
   west?: MapNode;
   northwest?: MapNode;
 };
-type Map = MapNode[][];
+export type Map = MapNode[][];
 
 export function make_map_from_input(input: string): Map {
   const lines: string[][] = input.split("\n").map(line => line.split(""));
